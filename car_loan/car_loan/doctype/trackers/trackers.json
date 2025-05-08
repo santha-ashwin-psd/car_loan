@@ -1,0 +1,193 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{urn_our_indication}",
+ "creation": "2025-05-05 15:44:38.001820",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "comments_section",
+  "urn_our_indication",
+  "age",
+  "loan_no",
+  "pos",
+  "make",
+  "tenure",
+  "fast_tag_bk",
+  "validity",
+  "balance",
+  "column_break_oiou",
+  "regn",
+  "cm_name",
+  "regn_no",
+  "disbus__dt",
+  "insurance",
+  "policy_no",
+  "permanent_address",
+  "dt",
+  "police_trace_section",
+  "police_trace",
+  "section_break_cjfp",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "comments_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "urn_our_indication.cm_name",
+   "fieldname": "cm_name",
+   "fieldtype": "Data",
+   "label": "CM Name"
+  },
+  {
+   "fetch_from": "urn_our_indication.loan_no",
+   "fieldname": "loan_no",
+   "fieldtype": "Data",
+   "label": "Loan no"
+  },
+  {
+   "fetch_from": "urn_our_indication.pos",
+   "fieldname": "pos",
+   "fieldtype": "Data",
+   "label": "Pos"
+  },
+  {
+   "fetch_from": "urn_our_indication.make",
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "label": "Make "
+  },
+  {
+   "fetch_from": "urn_our_indication.tenure",
+   "fieldname": "tenure",
+   "fieldtype": "Data",
+   "label": "Tenure"
+  },
+  {
+   "fetch_from": "urn_our_indication.fast_tag",
+   "fieldname": "fast_tag_bk",
+   "fieldtype": "Data",
+   "label": "Fast Tag"
+  },
+  {
+   "fetch_from": "urn_our_indication.dt",
+   "fieldname": "dt",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fetch_from": "urn_our_indication.validity",
+   "fieldname": "validity",
+   "fieldtype": "Data",
+   "label": "Validity"
+  },
+  {
+   "fetch_from": "urn_our_indication.balance",
+   "fieldname": "balance",
+   "fieldtype": "Data",
+   "label": "Balance "
+  },
+  {
+   "fieldname": "column_break_oiou",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "urn_our_indication.regn",
+   "fieldname": "regn",
+   "fieldtype": "Data",
+   "label": "Regn"
+  },
+  {
+   "fieldname": "urn_our_indication",
+   "fieldtype": "Link",
+   "label": "URN",
+   "options": "Customer Info"
+  },
+  {
+   "fetch_from": "urn_our_indication.regn_no",
+   "fieldname": "regn_no",
+   "fieldtype": "Data",
+   "label": "regn no"
+  },
+  {
+   "fetch_from": "urn_our_indication.disbus__dt",
+   "fieldname": "disbus__dt",
+   "fieldtype": "Date",
+   "label": "Disbus  Date"
+  },
+  {
+   "fetch_from": "urn_our_indication.age",
+   "fieldname": "age",
+   "fieldtype": "Date",
+   "label": "Age"
+  },
+  {
+   "fetch_from": "urn_our_indication.insurance",
+   "fieldname": "insurance",
+   "fieldtype": "Data",
+   "label": "Insurance"
+  },
+  {
+   "fetch_from": "urn_our_indication.policy_no",
+   "fieldname": "policy_no",
+   "fieldtype": "Data",
+   "label": "Policy no"
+  },
+  {
+   "fetch_from": "urn_our_indication.permanent_address",
+   "fieldname": "permanent_address",
+   "fieldtype": "Small Text",
+   "label": "Permanent Address"
+  },
+  {
+   "fieldname": "police_trace_section",
+   "fieldtype": "Section Break",
+   "label": "Police Trace"
+  },
+  {
+   "fieldname": "police_trace",
+   "fieldtype": "Geolocation",
+   "label": "Police Trace"
+  },
+  {
+   "fieldname": "section_break_cjfp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Table",
+   "label": "Comments",
+   "options": "command child"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-05-08 22:42:58.190637",
+ "modified_by": "Administrator",
+ "module": "Car Loan",
+ "name": "Trackers",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

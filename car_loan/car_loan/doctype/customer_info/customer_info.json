@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{urn_our_indication}",
+ "creation": "2025-05-07 17:42:30.486977",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "urn_our_indication",
+  "regn",
+  "loan_no",
+  "cm_name",
+  "make",
+  "age",
+  "tenure",
+  "disbus__dt",
+  "pos",
+  "column_break_iurr",
+  "policy_no",
+  "fast_tag",
+  "regn_no",
+  "insurance",
+  "balance",
+  "validity",
+  "permanent_address",
+  "dt"
+ ],
+ "fields": [
+  {
+   "fieldname": "urn_our_indication",
+   "fieldtype": "Data",
+   "label": "URN"
+  },
+  {
+   "fieldname": "regn",
+   "fieldtype": "Data",
+   "label": "Regn"
+  },
+  {
+   "fieldname": "loan_no",
+   "fieldtype": "Data",
+   "label": "Loan no"
+  },
+  {
+   "fieldname": "cm_name",
+   "fieldtype": "Data",
+   "label": "CM Name"
+  },
+  {
+   "fieldname": "pos",
+   "fieldtype": "Data",
+   "label": "Pos"
+  },
+  {
+   "fieldname": "regn_no",
+   "fieldtype": "Data",
+   "label": "regn no"
+  },
+  {
+   "fieldname": "insurance",
+   "fieldtype": "Data",
+   "label": "Insurance"
+  },
+  {
+   "fieldname": "validity",
+   "fieldtype": "Data",
+   "label": "Validity"
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Data",
+   "label": "Balance "
+  },
+  {
+   "fieldname": "column_break_iurr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "label": "Make "
+  },
+  {
+   "fieldname": "disbus__dt",
+   "fieldtype": "Data",
+   "label": "Disbus  dt"
+  },
+  {
+   "fieldname": "tenure",
+   "fieldtype": "Data",
+   "label": "Tenure"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Date",
+   "label": "Age"
+  },
+  {
+   "fieldname": "policy_no",
+   "fieldtype": "Data",
+   "label": "Policy no"
+  },
+  {
+   "fieldname": "permanent_address",
+   "fieldtype": "Small Text",
+   "label": "Permanent Address"
+  },
+  {
+   "fieldname": "fast_tag",
+   "fieldtype": "Data",
+   "label": "Fast tag"
+  },
+  {
+   "fieldname": "dt",
+   "fieldtype": "Date",
+   "label": "Date"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-05-08 22:44:34.471472",
+ "modified_by": "Administrator",
+ "module": "Car Loan",
+ "name": "Customer Info",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
