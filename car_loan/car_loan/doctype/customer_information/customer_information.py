@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class trackers(Document):
+class CustomerInformation(Document):
 	pass

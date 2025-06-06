@@ -1,150 +1,151 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{urn_our_indication}",
- "creation": "2025-05-05 15:44:38.001820",
+ "autoname": "format:{###}",
+ "creation": "2025-05-09 01:13:49.180602",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "comments_section",
-  "urn_our_indication",
+  "uno",
   "age",
   "loan_no",
   "pos",
   "make",
   "tenure",
-  "fast_tag_bk",
+  "fast_tag",
   "validity",
   "balance",
-  "column_break_oiou",
+  "column_break_zlga",
   "regn",
   "cm_name",
   "regn_no",
-  "disbus__dt",
+  "disbus_date",
   "insurance",
   "policy_no",
   "permanent_address",
-  "dt",
-  "police_trace_section",
+  "date",
+  "section_break_uzgn",
   "police_trace",
-  "section_break_cjfp",
+  "section_break_sibx",
   "comments"
  ],
  "fields": [
   {
-   "fieldname": "comments_section",
-   "fieldtype": "Section Break"
+   "fieldname": "uno",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "URN ",
+   "options": "Customer Information",
+   "reqd": 1,
+   "unique": 1
   },
   {
-   "fetch_from": "urn_our_indication.cm_name",
-   "fieldname": "cm_name",
+   "fetch_from": "uno.age",
+   "fieldname": "age",
    "fieldtype": "Data",
-   "label": "CM Name"
+   "label": "Age"
   },
   {
-   "fetch_from": "urn_our_indication.loan_no",
+   "fetch_from": "uno.loan_no",
    "fieldname": "loan_no",
    "fieldtype": "Data",
    "label": "Loan no"
   },
   {
-   "fetch_from": "urn_our_indication.pos",
+   "fetch_from": "uno.pos",
    "fieldname": "pos",
    "fieldtype": "Data",
    "label": "Pos"
   },
   {
-   "fetch_from": "urn_our_indication.make",
+   "fetch_from": "uno.make",
    "fieldname": "make",
    "fieldtype": "Data",
-   "label": "Make "
+   "label": "Make"
   },
   {
-   "fetch_from": "urn_our_indication.tenure",
+   "fetch_from": "uno.tenure",
    "fieldname": "tenure",
    "fieldtype": "Data",
    "label": "Tenure"
   },
   {
-   "fetch_from": "urn_our_indication.fast_tag",
-   "fieldname": "fast_tag_bk",
+   "fetch_from": "uno.fast_tag",
+   "fieldname": "fast_tag",
    "fieldtype": "Data",
    "label": "Fast Tag"
   },
   {
-   "fetch_from": "urn_our_indication.dt",
-   "fieldname": "dt",
-   "fieldtype": "Date",
-   "label": "Date"
-  },
-  {
-   "fetch_from": "urn_our_indication.validity",
+   "fetch_from": "uno.validity",
    "fieldname": "validity",
    "fieldtype": "Data",
    "label": "Validity"
   },
   {
-   "fetch_from": "urn_our_indication.balance",
+   "fetch_from": "uno.balance",
    "fieldname": "balance",
    "fieldtype": "Data",
-   "label": "Balance "
+   "label": "Balance"
   },
   {
-   "fieldname": "column_break_oiou",
+   "fieldname": "column_break_zlga",
    "fieldtype": "Column Break"
   },
   {
-   "fetch_from": "urn_our_indication.regn",
+   "fetch_from": "uno.regn",
    "fieldname": "regn",
    "fieldtype": "Data",
    "label": "Regn"
   },
   {
-   "fieldname": "urn_our_indication",
-   "fieldtype": "Link",
-   "label": "URN",
-   "options": "Customer Info"
+   "fetch_from": "uno.cm_name",
+   "fieldname": "cm_name",
+   "fieldtype": "Data",
+   "label": "CM Name"
   },
   {
-   "fetch_from": "urn_our_indication.regn_no",
+   "fetch_from": "uno.regn_no",
    "fieldname": "regn_no",
    "fieldtype": "Data",
-   "label": "regn no"
+   "label": "Regn No"
   },
   {
-   "fetch_from": "urn_our_indication.disbus__dt",
-   "fieldname": "disbus__dt",
-   "fieldtype": "Date",
-   "label": "Disbus  Date"
+   "fetch_from": "uno.disbus__dt",
+   "fieldname": "disbus_date",
+   "fieldtype": "Data",
+   "label": "Disbus Date"
   },
   {
-   "fetch_from": "urn_our_indication.age",
-   "fieldname": "age",
-   "fieldtype": "Date",
-   "label": "Age"
-  },
-  {
-   "fetch_from": "urn_our_indication.insurance",
+   "fetch_from": "uno.insurance",
    "fieldname": "insurance",
    "fieldtype": "Data",
    "label": "Insurance"
   },
   {
-   "fetch_from": "urn_our_indication.policy_no",
+   "fetch_from": "uno.policy_no",
    "fieldname": "policy_no",
    "fieldtype": "Data",
    "label": "Policy no"
   },
   {
-   "fetch_from": "urn_our_indication.permanent_address",
+   "fetch_from": "uno.permanent_address",
    "fieldname": "permanent_address",
    "fieldtype": "Small Text",
    "label": "Permanent Address"
   },
   {
-   "fieldname": "police_trace_section",
-   "fieldtype": "Section Break",
-   "label": "Police Trace"
+   "fetch_from": "uno.dt",
+   "fieldname": "date",
+   "fieldtype": "Data",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_uzgn",
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "police_trace",
@@ -152,23 +153,23 @@
    "label": "Police Trace"
   },
   {
-   "fieldname": "section_break_cjfp",
+   "fieldname": "section_break_sibx",
    "fieldtype": "Section Break"
   },
   {
    "fieldname": "comments",
    "fieldtype": "Table",
-   "label": "Comments",
-   "options": "command child"
+   "label": "Remark",
+   "options": "Remarks Child"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-08 22:42:58.190637",
+ "modified": "2025-06-06 09:32:59.088282",
  "modified_by": "Administrator",
  "module": "Car Loan",
- "name": "Trackers",
+ "name": "Tracker",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [

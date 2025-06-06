@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class CustomerInfo(Document):
+class RemarksChild(Document):
 	pass

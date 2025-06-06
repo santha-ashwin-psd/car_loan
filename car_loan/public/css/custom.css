@@ -1,0 +1,50 @@
+/* 
+/* Hide the left sidebar navigation */
+.layout-side-section {
+    display: none !important;
+}
+
+/* Expand the main content to full width */
+.layout-main-section {
+    width: 100% !important;
+}
+
+
+.sidebar-toggle-btn .sidebar-toggle-placeholder {
+    display: none !important;
+}
+
+
+
+.page-title .sidebar-toggle-btn .sidebar-toggle-icon, .page-title .sidebar-toggle-btn .sidebar-toggle-placeholder {
+    display: none ;
+
+
+}
+
+.nav-item.dropdown-help {
+    display: none !important;
+} 
+
+.comment-box {
+    display: none;
+    margin-top: var(--margin-lg);
+    padding: 0;
+}
+
+
+
+.container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1035px;
+}
+
+
+
+
+.grid-form-heading {
+    display: none;
+}
+
+.grid-footer-toolbar.hidden-xs.flex.justify-between {
+    display: none;
+}

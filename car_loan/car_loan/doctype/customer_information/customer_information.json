@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{urn_our_indication}",
+ "autoname": "format:{###}",
  "creation": "2025-05-07 17:42:30.486977",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -15,6 +15,7 @@
   "tenure",
   "disbus__dt",
   "pos",
+  "dt",
   "column_break_iurr",
   "policy_no",
   "fast_tag",
@@ -22,14 +23,16 @@
   "insurance",
   "balance",
   "validity",
-  "permanent_address",
-  "dt"
+  "permanent_address"
  ],
  "fields": [
   {
    "fieldname": "urn_our_indication",
    "fieldtype": "Data",
-   "label": "URN"
+   "in_list_view": 1,
+   "label": "URN",
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "regn",
@@ -92,7 +95,7 @@
   },
   {
    "fieldname": "age",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
    "label": "Age"
   },
   {
@@ -119,10 +122,10 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-08 22:44:34.471472",
+ "modified": "2025-05-26 18:37:21.725902",
  "modified_by": "Administrator",
  "module": "Car Loan",
- "name": "Customer Info",
+ "name": "Customer Information",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
@@ -140,7 +143,10 @@
   }
  ],
  "row_format": "Dynamic",
+ "search_fields": "urn_our_indication",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "urn_our_indication"
 }

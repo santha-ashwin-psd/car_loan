@@ -21,6 +21,39 @@ app_license = "mit"
 # 	}
 # ]
 
+# hooks.py
+# doc_events = {
+#     "Tracker": {
+#         "validate": "car-loan.car-loan.doctype.tracker.tracker.validate"
+#     }
+# }
+
+
+
+
+doc_events = {
+    "User": {
+        "after_insert": "car_loan.overrides.user.set_default_theme"
+    }
+}
+
+
+app_include_js = [
+    "/assets/car_loan/js/theme.js",
+    "/assests/car_loan/js/custom.js",
+]
+
+# boot_session = "car_loan.overrides.session_boot.boot_session"
+
+boot_session = "car_loan.overrides.session_boot.boot_session"
+
+
+
+override_whitelisted_methods = {
+    "frappe.core.doctype.user.user.switch_theme": "car_loan.overrides.switch_theme.switch_theme"
+}
+
+
 # Includes in <head>
 # ------------------
 
@@ -29,7 +62,11 @@ app_license = "mit"
 # app_include_js = "/assets/car_loan/js/car_loan.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/car_loan/css/car_loan.css"
+app_include_css = [
+    "/assets/car_loan/css/custom.css",
+    "/assets/car_loan/css/theme.css",
+]
+# app_include_js = "/assets/car_loan/JS/custom.js"
 # web_include_js = "/assets/car_loan/js/car_loan.js"
 
 # include custom scss in every website theme (without file extension ".scss")

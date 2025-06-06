@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-09 00:05:34.543055",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "contact_type",
+  "commends",
+  "attach",
+  "current_user",
+  "date_and_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "commends",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "in_preview": 1,
+   "label": "Attach"
+  },
+  {
+   "fieldname": "contact_type",
+   "fieldtype": "Select",
+   "label": "Contact Type",
+   "options": "Fast Tag\nGoogle search details/address\nGas Details\nNaukri\nDTH\nSpeed search\nEyecon facebook/whatsapp\nSwiggy /zomatoe\nFlipkart/amazon\nPan or Aadhar"
+  },
+  {
+   "fieldname": "date_and_time",
+   "fieldtype": "Datetime",
+   "label": "Date And Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "current_user",
+   "fieldtype": "Data",
+   "label": "Created By",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-05 16:06:47.158513",
+ "modified_by": "Administrator",
+ "module": "Car Loan",
+ "name": "Remarks Child",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
